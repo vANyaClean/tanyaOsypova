@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+:root {
+  font-family: "Poiret One", cursive;
+  scroll-behavior: smooth;
+}
+body{
+    margin:auto;
+    max-width: 1200px;
+}
+body header{
+  margin-top: 0%;
+}
+body h2{
+  text-align: center;
+}
+body .navbar{
+    display:flex;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+body nav .underlogo{
+  font-weight: bolder;
+  margin-left:80px;
+}
+body .logo-name{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 0%;
+}
+ body .navbar li a{
+  text-decoration: none;
+  font-size:20px;
+  color:black
+}
+body .navbar li a:hover{ 
+  text-decoration:underline;
+  font-weight:bold;
+}
+body .aboutme{
+  display: flex;
+}
+body #aboutme img {
+  height:300px;
+}
+body section form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body section form input,body section form textarea{
+  text-align: center;
+  display: flex;
+  width: 400px;
+  height:25px;
+}
+body section form button{
+ margin-top: 20px;
+ padding: 6px 9px 5px !important;
+font-size: 16px !important;
+background-color:limegreen;
+font-weight: bold;
+color: #ffffff;
+border-radius: 100px;
+-moz-border-radius: 100px;
+-webkit-border-radius: 100px;
+border: 2px solid white;
+cursor: pointer;
+box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+body section form button:hover{
+  border: 2px solid limegreen;
+  color:limegreen;
+  background-color: linen;
+}
+body section form button:focus{
+  outline: white;
+}
+body section form #textinput{
+  width: 400px;
+  height:150px;
+}
+body section form #my-form-status{
+  color:limegreen;
+  font-size: 20px;
+  font-weight: bolder;
+}
+body footer ul li,.facelogo{
+  width: 30px;
+  font-weight:bolder;
+
+}
+body footer ul {
+    list-style-type: none;
+    display:flex;
+    justify-content: space-evenly;
+      margin-right: 100px;
+}

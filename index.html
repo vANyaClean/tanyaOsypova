@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Тетяна Осипова</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+       
+        <ul class="navbar">
+          <li>
+            <div class = "logo">
+                <h1 class="logo-name">Тетяна Осипова</h1>
+                <p class ="underlogo">Психотерапевт</p>
+            </div>
+          </li>
+          <li>
+            <a href="#contacts">Контакти</a>
+          </li>
+          <li>
+            <a href="#feedback">Відгуки</a>
+          </li>
+          <li>
+            <a href="#my-form">Написати мені</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="aboutme">
+      <h2>Про мене</h2>
+      <div class = "aboutme">
+          <p class="about-me-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id facilisis ipsum. Maecenas consequat vestibulum congue. Sed placerat urna mi, at tempus augue viverra a. Proin ornare eros enim, a dapibus ex commodo sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam id dolor a erat finibus posuere sit amet vitae enim. Integer vitae diam mauris. Aliquam pharetra libero in tellus venenatis, id maximus purus euismod. In augue urna, vehicula vel metus at, scelerisque semper leo.
+          Vestibulum faucibus et urna tincidunt consectetur. Sed eget dolor vitae nibh imperdiet auctor. Proin lobortis justo urna, ac ultricies metus elementum molestie. Nullam magna arcu, euismod eget augue ac, auctor luctus quam. Vestibulum pretium, ex in accumsan lacinia, magna est feugiat dolor, vitae rutrum odio justo eget felis. Maecenas porttitor mauris ac commodo efficitur. Donec ac efficitur magna. Nulla et eros nunc. Maecenas maximus nisl condimentum, consequat neque at, vulputate nibh.
+          Aenean ante enim, aliquet sit amet tellus vitae, pretium tristique nunc. Praesent vel cursus libero, sed viverra diam. Proin diam quam, consectetur quis malesuada facilisis, vehicula at felis. Fusce sagittis, metus eget scelerisque rhoncus, justo ex tempor dolor, sit amet fringilla turpis magna id nunc. Mauris diam dolor, mollis ac neque ac, hendrerit placerat elit. Quisque fermentum efficitur diam quis finibus. Vestibulum tristique gravida nisi sed maximus. Fusce vitae dictum magna, commodo tempus odio. Sed ligula sapien, convallis quis erat interdum, condimentum eleifend ante. Quisque vel nunc non odio imperdiet iaculis at ut enim. Suspendisse a dignissim odio. Nullam sit amet molestie diam, nec consequat lorem.</p>
+          <img src="img/tetiana.jpg" alt="tania" class="about-me-photo">
+      </div>
+      </section>
+    <section id="feedback">
+      <h2>Відгуки</h2>
+    </section>
+    <section class="form">
+      <h2>Написати Мені</h2>
+      <form id="my-form" action="https://formspree.io/xrgywdlb" method="POST">
+        <label>ПІБ:
+          <input type="text" name="name" required/>
+        </label>
+        <label>Адреса:
+          <input type="text" name="adress" required/>
+        </label>
+        <label>Вік:
+          <input type="date" name="date"required/>
+        </label>
+        <label>Телефон:
+          <input type="text" name="phone"required/>
+        </label>
+        <label>Email:
+          <input type="email" name="email" required/>
+        </label>
+        <label>Опишіть вашу проблему:
+          <textarea name="message" id="textinput" required></textarea>
+        </label>
+        <button id="my-form-button">Надіслати</button>
+        <p id="my-form-status"></p>
+    </form>
+  </section>
+    <footer id="contacts">
+        <h2>Мої контакти</h2>
+        <ul>
+            <li>tetyos8@gmail.com</li>
+            <li>+380676754451</li>
+            <li>
+                <a href="https://www.facebook.com/tetiana.osypova" target="_blank"><img src="img/facebook.svg" alt="facebook" class = "facelogo"></a>
+            </li>
+        </ul>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>
