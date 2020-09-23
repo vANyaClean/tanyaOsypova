@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Самодіагностика</title>
-</head>
-<body>
+    <link rel="stylesheet" href="css/form.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-          <ul class="navbar">
-            <li>
-              <div class = "logo">
-                  <h1 class="logo-name">Тетяна Осипова</h1>
-                  <p class ="underlogo">Психотерапевт</p>
-              </div>
-            </li>
-            <li>
-              <a href="#contacts">Контакти</a>
-            </li>
-            <li>
-              <a href="#feedback">Відгуки</a>
-            </li>
-            <li>
-              <a href="#my-form">Написати мені</a>
-            </li>
-            <li>
-              <a href ="form.html">Самодіагностика</a>    
-            </li>
-          </ul>
-        </nav>
-      <section id="aboutme">
-        <h2>Про мене</h2>
-        <div class = "aboutme">
-            <p class="about-me-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id facilisis ipsum. Maecenas consequat vestibulum congue. Sed placerat urna mi, at tempus augue viverra a. Proin ornare eros enim, a dapibus ex commodo sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam id dolor a erat finibus posuere sit amet vitae enim. Integer vitae diam mauris. Aliquam pharetra libero in tellus venenatis, id maximus purus euismod. In augue urna, vehicula vel metus at, scelerisque semper leo.
-            Vestibulum faucibus et urna tincidunt consectetur.</p>
-            <img src="img/tetiana.jpg" alt="tania" class="about-me-photo">
-        </div>
-      </header>
-    
-</body>
+      <nav>
+        <ul class="navbar">
+          <li>
+            <div class="logo">
+              <h1 class="logo-name">Тетяна Осипова</h1>
+              <p class="underlogo">Психотерапевт</p>
+            </div>
+          </li>
+          <li>
+            <a href="#contacts"> </a>
+          </li>
+          <li>
+            <a href="#feedback"> </a>
+          </li>
+          <li>
+            <a href="#my-form"> </a>
+          </li>
+          <li>
+            <a href="index.html">На головну</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="form">
+      <h2>Самодіагностика</h2>
+      <label
+        >Чи були в вас приводи в поліцію через наркотики?
+        <label
+          >Так
+          <input type="radio" name="police" value="yes" id="police" />
+        </label>
+        <label
+          >НІ
+          <input type="radio" name="police" value="no" id="police" />
+        </label>
+      </label>
+      <button id="form-button">Перевірити</button>
+    </section>
+    <footer></footer>
+    <script src="js/amAddict.js"></script>
+  </body>
 </html>
