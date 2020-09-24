@@ -42,3 +42,35 @@ body .navbar {
     text-decoration: underline;
     font-weight: bold;
   }
+  body .full-form #form-button{
+   justify-self: center;
+  }
+  body .form-container{
+    text-align: center;
+  }
+  body section button {
+    margin-top: 20px;
+    padding: 6px 9px 5px !important;
+    font-size: 16px !important;
+    background-color: limegreen;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border: 2px solid white;
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    margin: auto;
+    margin-left: 110px;
+  }
+  body section button:hover {
+    border: 2px solid limegreen;
+    color: limegreen;
+    background-color: linen;
+  }
+  body section button:focus {
+    outline: white;
+  }

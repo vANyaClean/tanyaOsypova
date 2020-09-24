@@ -1,5 +1,9 @@
 let formContainer = document.querySelector(".form-container");
+let button = document.querySelector("#form-button");
+let container = document.querySelector(".container");
+button.style = "display:none";
 document.querySelector(".alco").addEventListener("click", () => {
+  button.style = "display:true";
   formContainer.innerHTML = `<h3>Алкогольна залежність</h3>
     <label>Чи були в вас приводи в поліцію через наркотики?
       <label>Так<input type="radio" name="police" value="yes" required ></label>
@@ -49,6 +53,7 @@ document.querySelector(".alco").addEventListener("click", () => {
 <p class="container"></p>`;
 });
 document.querySelector(".narco").addEventListener("click", () => {
+  button.style = "display:true";
   formContainer.innerHTML = `<section class="narco-form" id="form">
     <h3>Хімічна залежність</h3>
     <label>Чи були в вас приводи в поліцію через наркотики?
@@ -101,6 +106,7 @@ document.querySelector(".narco").addEventListener("click", () => {
   </section>`;
 });
 document.querySelector(".gamble").addEventListener("click", () => {
+  button.style = "display:true";
   formContainer.innerHTML = `<section class="gamble-form" id="form">
  <h3>Патологічний азарт</h3>
  <p>(Ігрова залженість)</p>
@@ -154,6 +160,7 @@ document.querySelector(".gamble").addEventListener("click", () => {
 </section>`;
 });
 document.querySelector(".relatives").addEventListener("click", () => {
+  button.style = "display:true";
   formContainer.innerHTML = `<section class="relatives-form" id="form">
    <h3>Співзалежність</h3>
    <p>(Родичі залежних)</p>
@@ -207,6 +214,7 @@ document.querySelector(".relatives").addEventListener("click", () => {
  </section>`;
 });
 document.querySelector(".internet").addEventListener("click", () => {
+  button.style = "display:true";
   formContainer.innerHTML = `<section class="internet-form" id="form">;
     <h3>Залежність від інтернету чи комп'ютерних ігор</h3>
     <label>Чи були в вас приводи в поліцію через наркотики?
@@ -257,11 +265,8 @@ document.querySelector(".internet").addEventListener("click", () => {
     <p class="container"></p>
   </section>`;
 });
-let container = document.querySelector(".container");
-let button = document.querySelector("#form-button");
 button.addEventListener("click", () => {
-  let radioAnswers = document.querySelectorAll('input[type="radio"]:checked');
-  let arrOfValues = (Array.from(radioAnswers)).map((a) => a.value);
+  let arrOfValues = (Array.from(document.querySelectorAll('input[type="radio"]:checked'))).map((a) => a.value);
   let filteredArr = arrOfValues.filter((value) => value === "yes");
   filteredArr.length > 7
     ? (container.innerText = "ADDICTED")
