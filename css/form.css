@@ -89,3 +89,14 @@ body .navbar {
       margin-bottom:30px;
     }
   }
+  body footer ul li,
+.facelogo {
+  width: 30px;
+  font-weight: bolder;
+}
+body footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 100px;
+}

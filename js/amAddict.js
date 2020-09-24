@@ -2,6 +2,7 @@ let formContainer = document.querySelector(".form-container");
 let button = document.querySelector("#form-button");
 let container = document.querySelector(".container");
 let whatAddiction;
+let formQuestionCounter;
 button.style = "display:none";
 document.querySelector(".alco").addEventListener("click", () => {
   whatAddiction = "alco";
