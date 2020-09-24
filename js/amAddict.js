@@ -1,8 +1,10 @@
 let formContainer = document.querySelector(".form-container");
 let button = document.querySelector("#form-button");
 let container = document.querySelector(".container");
+let whatAddiction;
 button.style = "display:none";
 document.querySelector(".alco").addEventListener("click", () => {
+  whatAddiction = "alco";
   button.style = "display:true";
   formContainer.innerHTML = `<h3>Алкогольна залежність</h3>
     <label>Чи були в вас приводи в поліцію через наркотики?
@@ -53,6 +55,7 @@ document.querySelector(".alco").addEventListener("click", () => {
 <p class="container"></p>`;
 });
 document.querySelector(".narco").addEventListener("click", () => {
+  whatAddiction = "narco";
   button.style = "display:true";
   formContainer.innerHTML = `<section class="narco-form" id="form">
     <h3>Хімічна залежність</h3>
@@ -107,6 +110,7 @@ document.querySelector(".narco").addEventListener("click", () => {
 });
 document.querySelector(".gamble").addEventListener("click", () => {
   button.style = "display:true";
+  whatAddiction = "gamble";
   formContainer.innerHTML = `<section class="gamble-form" id="form">
  <h3>Патологічний азарт</h3>
  <p>(Ігрова залженість)</p>
@@ -161,6 +165,7 @@ document.querySelector(".gamble").addEventListener("click", () => {
 });
 document.querySelector(".relatives").addEventListener("click", () => {
   button.style = "display:true";
+  whatAddiction = "relatives";
   formContainer.innerHTML = `<section class="relatives-form" id="form">
    <h3>Співзалежність</h3>
    <p>(Родичі залежних)</p>
@@ -215,6 +220,7 @@ document.querySelector(".relatives").addEventListener("click", () => {
 });
 document.querySelector(".internet").addEventListener("click", () => {
   button.style = "display:true";
+  whatAddiction = "internet";
   formContainer.innerHTML = `<section class="internet-form" id="form">;
     <h3>Залежність від інтернету чи комп'ютерних ігор</h3>
     <label>Чи були в вас приводи в поліцію через наркотики?
@@ -266,12 +272,44 @@ document.querySelector(".internet").addEventListener("click", () => {
   </section>`;
 });
 button.addEventListener("click", () => {
-  let arrOfValues = (Array.from(document.querySelectorAll('input[type="radio"]:checked'))).map((a) => a.value);
+  let arrOfValues = Array.from(
+    document.querySelectorAll('input[type="radio"]:checked')
+  ).map((a) => a.value);
   let filteredArr = arrOfValues.filter((value) => value === "yes");
-  filteredArr.length > 7
-    ? (container.innerText = "ADDICTED")
-    : (container.innerText = "NOT ADDICTED");
-    console.log(filteredArr)
-    console.log(arrOfValues)
-}
-    );
+  if (arrOfValues.length >= 11) {
+    switch (whatAddiction) {
+      case "alco":
+        if (filteredArr.length > 6)
+          container.innerText =
+            "Ви залежна людина,скоріше зверніться по домопомогу!!!";
+        else container.innerText = "На щастя, ви не залежна особистість.";
+        break;
+      case "narco":
+        if (filteredArr.length > 5)
+          container.innerText =
+            "Ви залежна людина,скоріше зверніться по домопомогу!!!";
+        else container.innerText = "На щастя, ви не залежна особистість.";
+        break;
+      case "gamble":
+        if (filteredArr.length > 4)
+          container.innerText =
+            "Ви залежна людина,скоріше зверніться по домопомогу!!!";
+        else container.innerText = "На щастя, ви не залежна особистість.";
+        break;
+      case "relatives":
+        if (filteredArr.length > 3)
+          container.innerText =
+            "Ви залежна людина,скоріше зверніться по домопомогу!!!";
+        else container.innerText = "На щастя, ви не залежна особистість.";
+        break;
+      case "internet":
+        if (filteredArr.length > 2)
+          container.innerText =
+            "Ви залежна людина,скоріше зверніться по домопомогу!!!";
+        else container.innerText = "На щастя, ви не залежна особистість.";
+        break;
+    }
+  } else {
+    container.innerText = "Дайте відповідь на всі запитання!";
+  }
+});

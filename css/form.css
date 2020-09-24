@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 :root {
   font-family: "Poiret One", cursive;
@@ -43,16 +44,17 @@ body .navbar {
     font-weight: bold;
   }
   body .full-form #form-button{
-   justify-self: center;
+    margin:0 auto;
+   display:block;
   }
   body .form-container{
     text-align: center;
-  }
+  } 
   body section button {
     margin-top: 20px;
     padding: 6px 9px 5px !important;
     font-size: 16px !important;
-    background-color: limegreen;
+    background-color: black;
     font-weight: bold;
     color: #ffffff;
     border-radius: 100px;
@@ -63,14 +65,27 @@ body .navbar {
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
     -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
-    margin: auto;
-    margin-left: 110px;
+    margin:0 auto;
+    margin-left: 114px;
   }
+ 
   body section button:hover {
-    border: 2px solid limegreen;
-    color: limegreen;
+    border: 2px solid black;
+    color: black;
     background-color: linen;
   }
   body section button:focus {
     outline: white;
+  }
+  body section .container{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+  @media(max-width:1150px){
+    body section button{
+      margin:0 auto;
+      display:block;
+      margin-bottom:30px;
+    }
   }
