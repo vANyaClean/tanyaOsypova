@@ -5,11 +5,12 @@
 }
 body {
   box-sizing: border-box;
+  font-family: "Poiret One", cursive;
   margin: auto;
   max-width: 1200px;
 }
 body header {
-margin-top:0rem;
+  margin-top: 0rem;
 }
 body h2 {
   text-align: center;
@@ -26,6 +27,9 @@ body nav .underlogo {
   font-weight: bolder;
   margin-left: 50px;
 }
+body nav ul li div #dropdownMenuButton {
+  cursor: pointer;
+}
 body .logo-name {
   font-weight: bold;
   font-size: 30px;
@@ -36,10 +40,22 @@ body .navbar li a {
   text-decoration: none;
   font-size: 15px;
   color: black;
-  margin-right:30px;
+  margin-right: 1rem;
+}
+body #feedback{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+body #feedback article img {
+  border-radius: 50%;
+  width: 10rem;
+}
+.feedback-person {
+  text-align: center;
+  margin: auto;
+  margin-right: 40px;
 }
 body .navbar li a:hover {
-  text-decoration: underline;
   font-weight: bold;
 }
 body .aboutme {
@@ -49,9 +65,8 @@ body #aboutme img {
   width: 300px;
 }
 body #aboutme {
-  padding-top:40px;
-  background-color:rgba(50,205,50,0.3);
-  padding-bottom:40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 body section form {
   display: flex;

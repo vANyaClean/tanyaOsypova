@@ -48,11 +48,10 @@ formContainer.innerHTML = `<h3>Алкогольна залежність</h3>
 <label>Ні<input type="radio" name="n" value="no" ></label>
 </label>
 <p class="container"></p>`;
-let whatAddiction;
+let whatAddiction = "alco";
 let formQuestionCounter;
 document.querySelector(".alco").addEventListener("click", () => {
   whatAddiction = "alco";
-  button.style = "display:true";
   container.innerText = " ";
   formContainer.innerHTML = `<h3>Алкогольна залежність</h3>
     <label class="question">Чи були в вас приводи в поліцію через наркотики?
@@ -105,7 +104,6 @@ document.querySelector(".alco").addEventListener("click", () => {
 document.querySelector(".narco").addEventListener("click", () => {
   whatAddiction = "narco";
   container.innerText = " ";
-  button.style = "display:true";
   formContainer.innerHTML = `<section class="narco-form" id="form">
     <h3>Хімічна залежність</h3>
     <label class="question">Чи були в вас приводи в поліцію через наркотики?
@@ -158,7 +156,6 @@ document.querySelector(".narco").addEventListener("click", () => {
   </section>`;
 });
 document.querySelector(".gamble").addEventListener("click", () => {
-  button.style = "display:true";
   whatAddiction = "gamble";
   container.innerText = " ";
   formContainer.innerHTML = `<section class="gamble-form" id="form">
@@ -214,7 +211,6 @@ document.querySelector(".gamble").addEventListener("click", () => {
 </section>`;
 });
 document.querySelector(".relatives").addEventListener("click", () => {
-  button.style = "display:true";
   whatAddiction = "relatives";
   container.innerText = " ";
   formContainer.innerHTML = `<section class="relatives-form" id="form">
@@ -270,7 +266,6 @@ document.querySelector(".relatives").addEventListener("click", () => {
  </section>`;
 });
 document.querySelector(".internet").addEventListener("click", () => {
-  button.style = "display:true";
   whatAddiction = "internet";
   container.innerText = " ";
   formContainer.innerHTML = `<section class="internet-form" id="form">;

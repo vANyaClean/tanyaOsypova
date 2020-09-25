@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Тетяна Осипова</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/carousel.css">
     <link rel="icon" href="img/nodrug.jfif">
   </head>
   <body>
     <header>
+      
       <nav>
         <ul class="navbar">
           <li>
@@ -25,6 +26,17 @@
             <a href="#feedback">Відгуки</a>
           </li>
           <li>
+            <div class="dropdown">
+              <a id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GAYBAR<span class="caret"></span></a>
+              <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
+          </li>
+          <li>
             <a href="#my-form">Написати мені</a>
           </li>
           <li>
@@ -35,80 +47,59 @@
     <section id="aboutme">
       <h2>Про мене</h2>
       <div class = "aboutme">
-          <p class="about-me-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id facilisis ipsum. Maecenas consequat vestibulum congue. Sed placerat urna mi, at tempus augue viverra a. Proin ornare eros enim, a dapibus ex commodo sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam id dolor a erat finibus posuere sit amet vitae enim. Integer vitae diam mauris. Aliquam pharetra libero in tellus venenatis, id maximus purus euismod. In augue urna, vehicula vel metus at, scelerisque semper leo.
-          Vestibulum faucibus et urna tincidunt consectetur.</p>
+        <article>
+          <ul>Я пропоную допомогу в наступних сферах:
+            <li>Лікування залежності від алкоголю, наркотиків, ліків, азартних ігор, інтернету, сексу, покупок. </li>
+            <li>Підтримка сімей та родичів залежних. </li>
+            <li>Депресія, тривоги, управління стресом, надаю професійну підтримку в життєвій кризі, пов’язаній з роботою, стосунками, міжособистісними контактами тощо. </li>
+            <li>Я допомагаю вдосконалити міжособистісні навички, асертивність(вміння виставляти особисті кордони) та працюю з проблемою заниженої самооцінки.</li>
+          </ul>
+            <p class="about-me-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id facilisis ipsum. Maecenas consequat vestibulum congue. Sed placerat urna mi, at tempus augue viverra a. Proin ornare eros enim, a dapibus ex commodo sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam id dolor a erat finibus posuere sit amet vitae enim. Integer vitae diam mauris. Aliquam pharetra libero in tellus venenatis, id maximus purus euismod. In augue urna, vehicula vel metus at, scelerisque semper leo.
+            Vestibulum faucibus et urna tincidunt consectetur.</p>
+        </article>
           <img src="img/tetiana.jpg" alt="tania" class="about-me-photo">
       </div>
     </header>
       </section>
     <section id="feedback">
       <h2>Відгуки</h2>
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-        <ul>
-          <li class="feedback-person">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <article class="feedback-person">
             <img src="img/readhead.jfif" alt="irish">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id facilisis ipsum. Maecenas consequat vestibulum congue. Sed placerat urna mi, at tempus augue viverra a. Proin ornare eros enim, a dapibus ex commodo sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam id dolor a erat finibus posuere sit amet vitae enim. Integer vitae diam mauris. Aliquam pharetra libero in tellus venenatis, id maximus purus euismod. In augue urna, vehicula vel metus at, scelerisque semper leo.
               Vestibulum faucibus et urna tincidunt consectetur.</p>
-          </li>
-          <li class="feedback-person">
-            <img src="img/lgbt.jfif" alt="lesbian">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id facilisis ipsum. Maecenas consequat vestibulum congue. Sed placerat urna mi, at tempus augue viverra a. Proin ornare eros enim, a dapibus ex commodo sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam id dolor a erat finibus posuere sit amet vitae enim. Integer vitae diam mauris. Aliquam pharetra libero in tellus venenatis, id maximus purus euismod. In augue urna, vehicula vel metus at, scelerisque semper leo.
-              Vestibulum faucibus et urna tincidunt consectetur.</p>
-          </li>
-          <li class="feedback-person">
-            <img src="img/blackone.jfif" alt="blackguy">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id facilisis ipsum. Maecenas consequat vestibulum congue. Sed placerat urna mi, at tempus augue viverra a. Proin ornare eros enim, a dapibus ex commodo sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam id dolor a erat finibus posuere sit amet vitae enim. Integer vitae diam mauris. Aliquam pharetra libero in tellus venenatis, id maximus purus euismod. In augue urna, vehicula vel metus at, scelerisque semper leo.
-              Vestibulum faucibus et urna tincidunt consectetur.</p>
-          </li>
-        </ul>
-       </div>
-       <div class="mySlides fade">
-        <ul>
-          <li class="feedback-person">
-            <img src="img/readhead.jfif" alt="irish">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id facilisis ipsum. Maecenas consequat vestibulum congue. Sed placerat urna mi, at tempus augue viverra a. Proin ornare eros enim, a dapibus ex commodo sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam id dolor a erat finibus posuere sit amet vitae enim. Integer vitae diam mauris. Aliquam pharetra libero in tellus venenatis, id maximus purus euismod. In augue urna, vehicula vel metus at, scelerisque semper leo.
-              Vestibulum faucibus et urna tincidunt consectetur.</p>
-          </li>
-          <li class="feedback-person">
-            <img src="img/lgbt.jfif" alt="lesbian">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id facilisis ipsum. Maecenas consequat vestibulum congue. Sed placerat urna mi, at tempus augue viverra a. Proin ornare eros enim, a dapibus ex commodo sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam id dolor a erat finibus posuere sit amet vitae enim. Integer vitae diam mauris. Aliquam pharetra libero in tellus venenatis, id maximus purus euismod. In augue urna, vehicula vel metus at, scelerisque semper leo.
-              Vestibulum faucibus et urna tincidunt consectetur.</p>
-          </li>
-          <li class="feedback-person">
-            <img src="img/blackone.jfif" alt="blackguy">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id facilisis ipsum. Maecenas consequat vestibulum congue. Sed placerat urna mi, at tempus augue viverra a. Proin ornare eros enim, a dapibus ex commodo sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam id dolor a erat finibus posuere sit amet vitae enim. Integer vitae diam mauris. Aliquam pharetra libero in tellus venenatis, id maximus purus euismod. In augue urna, vehicula vel metus at, scelerisque semper leo.
-              Vestibulum faucibus et urna tincidunt consectetur.</p>
-          </li>
-        </ul>
-       </div>
-       <div class="mySlides fade">
-        <ul>
-          <li class="feedback-person">
-            <img src="img/readhead.jfif" alt="irish">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id facilisis ipsum. Maecenas consequat vestibulum congue. Sed placerat urna mi, at tempus augue viverra a. Proin ornare eros enim, a dapibus ex commodo sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam id dolor a erat finibus posuere sit amet vitae enim. Integer vitae diam mauris. Aliquam pharetra libero in tellus venenatis, id maximus purus euismod. In augue urna, vehicula vel metus at, scelerisque semper leo.
-              Vestibulum faucibus et urna tincidunt consectetur.</p>
-          </li>
-          <li class="feedback-person">
-            <img src="img/lgbt.jfif" alt="lesbian">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id facilisis ipsum. Maecenas consequat vestibulum congue. Sed placerat urna mi, at tempus augue viverra a. Proin ornare eros enim, a dapibus ex commodo sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam id dolor a erat finibus posuere sit amet vitae enim. Integer vitae diam mauris. Aliquam pharetra libero in tellus venenatis, id maximus purus euismod. In augue urna, vehicula vel metus at, scelerisque semper leo.
-              Vestibulum faucibus et urna tincidunt consectetur.</p>
-          </li>
-          <li class="feedback-person">
-            <img src="img/blackone.jfif" alt="blackguy">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id facilisis ipsum. Maecenas consequat vestibulum congue. Sed placerat urna mi, at tempus augue viverra a. Proin ornare eros enim, a dapibus ex commodo sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam id dolor a erat finibus posuere sit amet vitae enim. Integer vitae diam mauris. Aliquam pharetra libero in tellus venenatis, id maximus purus euismod. In augue urna, vehicula vel metus at, scelerisque semper leo.
-              Vestibulum faucibus et urna tincidunt consectetur.</p>
-          </li>
-        </ul>
-       </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      </div>
-      <br>
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
+            </article>
+          </div>
+          <div class="carousel-item">
+            <article class="feedback-person">
+              <img src="img/blackone.jfif" alt="blackguy">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id facilisis ipsum. Maecenas consequat vestibulum congue. Sed placerat urna mi, at tempus augue viverra a. Proin ornare eros enim, a dapibus ex commodo sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam id dolor a erat finibus posuere sit amet vitae enim. Integer vitae diam mauris. Aliquam pharetra libero in tellus venenatis, id maximus purus euismod. In augue urna, vehicula vel metus at, scelerisque semper leo.
+                Vestibulum faucibus et urna tincidunt consectetur.</p>
+            </article>
+          </div>
+          <div class="carousel-item">
+            <article class="feedback-person">
+              <img src="img/blackone.jfif" alt="blackguy">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id facilisis ipsum. Maecenas consequat vestibulum congue. Sed placerat urna mi, at tempus augue viverra a. Proin ornare eros enim, a dapibus ex commodo sed. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam id dolor a erat finibus posuere sit amet vitae enim. Integer vitae diam mauris. Aliquam pharetra libero in tellus venenatis, id maximus purus euismod. In augue urna, vehicula vel metus at, scelerisque semper leo.
+                Vestibulum faucibus et urna tincidunt consectetur.</p>
+            </article>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </section>
     <section class="form">
@@ -148,6 +139,8 @@
     </footer>
     <script src="js/index.js"></script>
     <script src="js/form.js"></script>
-    <script src="js/carousel.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
 </html>
